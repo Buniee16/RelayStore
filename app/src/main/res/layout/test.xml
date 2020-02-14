@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_product"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/genre"
+            android:text="PARFUM-GOLD-FLACON-DE-75ML"
+            android:layout_toEndOf="@+id/img_product"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    <!--    <TextView
+            android:id="@+id/animal"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="animal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000"
+            android:textSize="20sp" />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/number"
+            android:layout_marginLeft="50dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/btn_border"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="250dp"
+            android:onClick="decreaseInteger"
+            android:text="-"
+            android:textColor="@android:color/white" />
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus"
+            android:layout_marginLeft="20dp"
+            android:text="Plus"
+            android:textColor="#000" />-->
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/btn_border"
+            android:onClick="increaseInteger"
+            android:text="+"
+            android:textColor="@android:color/white" />
+
+        <!--
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minus"
+            android:text="Minus"
+            android:textColor="#000" />-->
+    </LinearLayout>
+</LinearLayout>

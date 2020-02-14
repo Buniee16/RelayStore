@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07B0C5</color>
+    <color name="colorPrimaryDark">#07B0C5</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="btn_color">#07B0C5</color>
+    <color name="btn_color_two">#BBE3E7</color>
+    <color name="white_color">#ffffff</color>
+    <color name="tv_color">#3F51B5</color>
+    <color name="black_color">#000000</color>
+    <color name="view_color">#3482B7C2</color>
+    <color name="bg_color">#ECF1CD</color>
+    <color name="qty_color">#0B589C</color>
+</resources>

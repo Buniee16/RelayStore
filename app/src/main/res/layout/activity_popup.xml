@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/popup_border"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/realative"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Product Name :"
+            android:textStyle="bold"
+            android:id="@+id/txt_Enter_subject"
+            android:textSize="25dp"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/realative"
+            android:layout_marginTop="30dp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/txt_Product_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txt_Enter_subject"
+            android:inputType="text"
+            android:hint="PARFUM-STYLE-DIAMOND-DE-75ML"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            tools:ignore="NotSibling" />
+
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Select Quantity : "
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:id="@+id/txt_Enter_marks"
+            android:paddingStart="5dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/txt_Product_Name"
+            android:layout_marginTop="20dp"/>
+
+
+      <!--  <EditText
+            android:id="@+id/et_subject_marks"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="40dp"
+            android:inputType="number"
+            android:layout_below="@id/txt_Enter_marks"
+            android:hint="Marks"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="25dp" />-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/decrease"
+                android:layout_width="60dp"
+                android:layout_height="60sp"
+                android:background="@drawable/btn_border"
+                android:onClick="decreaseInteger"
+                android:text="-"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/integer_number"
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black_color"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/increase"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/btn_border"
+                android:onClick="increaseInteger"
+                android:text="+"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/popup_border"
+            android:backgroundTint="@color/btn_color"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:text="Done" />
+
+
+    </LinearLayout>
+</ScrollView>

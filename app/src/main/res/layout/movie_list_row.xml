@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+<!--
+    <ImageView
+        android:id="@+id/img_product"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+
+        android:src="@mipmap/ic_launcher_round" />
+-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img_product"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toStartOf="@+id/genre"
+        android:text="PARFUM-GOLD-FLACON-DE-75ML"
+        android:layout_toEndOf="@+id/img_product"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="Qty"
+        android:textColor="@color/qty_color"
+        android:textSize="18sp"
+         />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="150dp"
+        android:text="$250"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:layout_marginStart="80dp"
+        android:textColor="#000000" />
+
+    <!--<TextView
+        android:id="@+id/amount_per"
+        android:layout_width="100dp"
+        android:text=" / Item"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="80dp"
+        android:textColor="@color/qty_color"
+        android:textSize="15dp"
+        />-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/btn_border"
+            android:onClick="decreaseInteger"
+            android:text="-"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/integer_number"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black_color"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:background="@drawable/btn_border"
+            android:onClick="increaseInteger"
+            android:text="+"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

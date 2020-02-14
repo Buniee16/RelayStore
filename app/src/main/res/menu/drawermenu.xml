@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/timeTable"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/examSchedule"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Search" />
+        <item
+            android:id="@+id/attendence"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Report" />
+        <item
+            android:id="@+id/result"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Send" />
+    </group>
+<!--    <item android:title="Social">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/fb"-->
+<!--                android:icon="@drawable/facebook"-->
+<!--                android:title="Search" />-->
+<!--            <item-->
+<!--                android:id="@+id/gplus"-->
+<!--                android:icon="@drawable/googleplus"-->
+<!--                android:title="Report" />-->
+<!--            <item-->
+<!--                android:id="@+id/twitter"-->
+<!--                android:icon="@drawable/twitter"-->
+<!--                android:title="Send" />-->
+<!--            <item-->
+<!--                android:id="@+id/youtube"-->
+<!--                android:icon="@drawable/youtube"-->
+<!--                android:title="Youtube" />-->
+<!--            <item-->
+<!--                android:id="@+id/github"-->
+<!--                android:icon="@drawable/github"-->
+<!--                android:title="Github" />-->
+<!--        </menu>-->
+<!--    </item>-->
+</menu>
