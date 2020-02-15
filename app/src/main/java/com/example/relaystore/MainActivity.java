@@ -42,7 +42,27 @@ public class MainActivity extends AppCompatActivity {
     String email;
     String password;
     String confirm_Password;
-
+/*
+* This is the main activity
+* as'dasd
+* asdasdd
+* gs
+* twr
+* gdfb
+* xdfghawre
+* gsf
+* gvzs
+* dfgqw
+* req
+* ed
+* v
+* sadf
+* adsfa
+* sfa
+* dsfoa
+* sf
+*
+* */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
