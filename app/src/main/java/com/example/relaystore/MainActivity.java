@@ -43,24 +43,22 @@ public class MainActivity extends AppCompatActivity {
     String password;
     String confirm_Password;
 /*
-* This is the main activity
-* as'dasd
-* asdasdd
-* gs
-* twr
-* gdfb
-* xdfghawre
-* gsf
-* gvzs
-* dfgqw
-* req
-* ed
-* v
-* sadf
-* adsfa
-* sfa
-* dsfoa
-* sf
+aaaaaa
+b
+
+
+
+bbb
+adfasdq
+wqawsd
+asda
+sdasd
+asd
+asda
+sd
+asd
+asd
+asd
 *
 * */
 
